@@ -37,9 +37,9 @@ led = Pin(4, Pin.OUT)
 sensor = Pin(15, Pin.IN)
 
 while True:
-    nilai = sensor.value()
+    x=sensor.value()
 
-    if nilai == 1:
+    if x== 1:
         led.value(1)
     else:
         led.value(0)
